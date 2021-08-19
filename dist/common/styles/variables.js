@@ -2,7 +2,7 @@ import { StyleSheet, Platform } from 'react-native';
 // 品牌色
 const mtdBrandColors = {
     mtdBrandPrimary: '#ffd800',
-    mtdBrandPrimaryDark: '#FFA000',
+    mtdBrandPrimaryDark: '#ECB332',
     mtdBrandSuccess: '#61cb28',
     mtdBrandWarning: '#ff8400',
     mtdBrandDanger: '#f23244',
