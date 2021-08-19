@@ -248,7 +248,7 @@ export class Cascader extends Component {
         return (React.createElement(TouchableOpacity, { key: index, onPress: this.handlePress.bind(this, item, index) }, this.props.renderItem ? this.props.renderItem(item, index) :
             React.createElement(View, { style: [
                     styles.item,
-                    active ? { backgroundColor: variables.mtdFillGray } : {},
+                    active ? { backgroundColor: variables.mtdFillGray } : { color: '#000' },
                 ] },
                 React.createElement(Text, { style: [
                         styles.itemText,
