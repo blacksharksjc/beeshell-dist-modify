@@ -248,11 +248,11 @@ export class Cascader extends Component {
         return (React.createElement(TouchableOpacity, { key: index, onPress: this.handlePress.bind(this, item, index) }, this.props.renderItem ? this.props.renderItem(item, index) :
             React.createElement(View, { style: [
                     styles.item,
-                    active ? { backgroundColor: variables.mtdFillGray } : { color: '#000' },
+                    active ? { backgroundColor: variables.mtdFillGray } : {},
                 ] },
                 React.createElement(Text, { style: [
                         styles.itemText,
-                        active ? { color: variables.mtdBrandPrimaryDark, fontWeight: 'bold' } : {},
+                        active ? { color: variables.mtdBrandPrimaryDark, fontWeight: 'bold' } : { color: '#000' },
                     ], ellipsizeMode: 'middle' }, item[fieldKeys.labelKey]),
                 !isLeafNode ? React.createElement(Icon, { source: require(`../../common/images/icons/angle-right.png`), size: variables.mtdFontSizeM, tintColor: variables.mtdGrayLighter }) : null)));
     }
