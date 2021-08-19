@@ -248,8 +248,8 @@ export class SlideModal extends Modal {
                     position: 'absolute',
                     top: 0,
                     left: 0,
-                    width: screenWidth,
-                    height: screenHeight,
+                    bottom: 0,
+                    right: 0,
                 },
                 this.props.styles.root
             ], collapsable: false, pointerEvents: 'box-none' },
