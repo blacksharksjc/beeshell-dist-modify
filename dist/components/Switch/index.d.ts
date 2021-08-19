@@ -28,7 +28,7 @@ export declare class Switch extends Component<SwitchProps, SwitchState> {
     panResponder: PanResponderInstance;
     shadowColor: string;
     constructor(props: any);
-    componentWillReceiveProps(nextProps: any): void;
+    UNSAFE_componentWillReceiveProps(nextProps: any): void;
     componentWillMount(): void;
     onPanResponderGrant: () => void;
     onPanResponderMove: (evt: any, gestureState: any) => void;

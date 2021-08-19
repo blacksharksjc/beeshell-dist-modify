@@ -23,7 +23,7 @@ export declare class Datepicker extends React.Component<DatepickerProps, any> {
     };
     getDateInputByString(param: any): any;
     getDays(year: any, month: any): any[];
-    componentWillReceiveProps(nextProps: any): void;
+    UNSAFE_componentWillReceiveProps(nextProps: any): void;
     getViewList(list: any): any;
     handleChange: (index1: any, index2: any) => void;
     getDateByIndex(list: any, value: any): any;

@@ -67,7 +67,7 @@ export default class Slider extends PureComponent<SliderProps, State> {
     };
     constructor(props: any);
     componentWillMount(): void;
-    componentWillReceiveProps(nextProps: any): void;
+    UNSAFE_componentWillReceiveProps(nextProps: any): void;
     /**
      * 通过props获取滑块对应的value值
      */

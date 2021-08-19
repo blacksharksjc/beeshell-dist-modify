@@ -48,7 +48,7 @@ export declare class Scrollpicker extends React.Component<ScrollpickerProps, Scr
         proportion: any;
     };
     componentDidMount(): void;
-    componentWillReceiveProps(nextProps: any): void;
+    UNSAFE_componentWillReceiveProps(nextProps: any): void;
     getUIData(element: any, accurateHeight: any, maxCount?: any): Promise<{}>;
     resizeContainerHeight(targetItemHeight: any): any;
     locateIndicator(targetItemHeight: any): JSX.Element;

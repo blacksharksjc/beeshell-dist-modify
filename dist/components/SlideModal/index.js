@@ -127,7 +127,7 @@ export class SlideModal extends Modal {
             });
         }
     }
-    componentWillReceiveProps(nextProps) {
+    UNSAFE_componentWillReceiveProps(nextProps) {
         if (nextProps.direction !== this.props.direction ||
             nextProps.align !== this.props.align ||
             nextProps.offsetX !== this.props.offsetX ||

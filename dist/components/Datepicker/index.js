@@ -125,7 +125,7 @@ export class Datepicker extends React.Component {
         });
         return days;
     }
-    componentWillReceiveProps(nextProps) {
+    UNSAFE_componentWillReceiveProps(nextProps) {
         if (nextProps.date !== this.props) {
             this.setState({
                 ...this.initialize(nextProps)

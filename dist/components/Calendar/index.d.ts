@@ -21,7 +21,7 @@ export declare class Calendar extends React.Component<CalendarProps, any> {
     };
     constructor(props: any);
     componentDidMount(): void;
-    componentWillReceiveProps(nextProps: any): void;
+    UNSAFE_componentWillReceiveProps(nextProps: any): void;
     init(props: any): {
         date: any;
         selectedDate: any;

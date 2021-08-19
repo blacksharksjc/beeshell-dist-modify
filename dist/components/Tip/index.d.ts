@@ -34,7 +34,7 @@ export declare class Tip extends Modal<TipProps> {
     static hide: () => void;
     constructor(props: any);
     init(props: any, syncTag?: boolean): void;
-    componentWillReceiveProps(nextProps: any): void;
+    UNSAFE_componentWillReceiveProps(nextProps: any): void;
     getContent(c: any): any;
     getBody(c: any): JSX.Element;
     open(c: any): any;

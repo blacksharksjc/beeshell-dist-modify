@@ -83,7 +83,7 @@ export class Scrollpicker extends React.Component {
             console.log(e);
         });
     }
-    componentWillReceiveProps(nextProps) {
+    UNSAFE_componentWillReceiveProps(nextProps) {
         if (nextProps !== this.props) {
             const data = this.initialize(nextProps);
             this.setState({

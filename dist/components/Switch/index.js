@@ -144,7 +144,7 @@ export class Switch extends Component {
         };
         this.offset = switchWidth - switchHeight + 1;
     }
-    componentWillReceiveProps(nextProps) {
+    UNSAFE_componentWillReceiveProps(nextProps) {
         if (nextProps.value === this.state.value) {
             return;
         }

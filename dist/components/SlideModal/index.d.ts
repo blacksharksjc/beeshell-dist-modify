@@ -64,7 +64,7 @@ export declare class SlideModal<T extends SlideModalProps> extends Modal<T> {
     };
     constructor(props: any);
     init(props: any, syncTag?: boolean): void;
-    componentWillReceiveProps(nextProps: any): void;
+    UNSAFE_componentWillReceiveProps(nextProps: any): void;
     open(c: any): any;
     getRects(): {
         contentContainerRect: {

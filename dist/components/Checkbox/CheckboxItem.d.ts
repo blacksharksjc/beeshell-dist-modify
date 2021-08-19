@@ -30,7 +30,7 @@ export declare class CheckboxItem<T extends CheckboxItemProps, P> extends Compon
     animated: any;
     constructor(props: any);
     componentDidMount(): void;
-    componentWillReceiveProps(nextProps: any): void;
+    UNSAFE_componentWillReceiveProps(nextProps: any): void;
     handlePress: () => void;
     renderIcon: () => JSX.Element;
     renderLabel(): JSX.Element;

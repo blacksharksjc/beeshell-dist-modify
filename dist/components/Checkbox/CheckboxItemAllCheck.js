@@ -54,7 +54,7 @@ export class CheckboxItemAllCheck extends CheckboxItem {
         };
         this.state = {};
     }
-    componentWillReceiveProps(nextProps) {
+    UNSAFE_componentWillReceiveProps(nextProps) {
         if (nextProps.checkedStatus !== this.props.checkedStatus) {
             this.animated && this.animated.toIn();
         }

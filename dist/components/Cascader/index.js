@@ -216,7 +216,7 @@ export class Cascader extends Component {
             disabledKey: fieldKeys.disabledKey || 'disabled'
         };
     }
-    componentWillReceiveProps(nextProps) {
+    UNSAFE_componentWillReceiveProps(nextProps) {
         if (nextProps.value !== this.props.value ||
             nextProps.data !== this.props.data) {
             this.setState({

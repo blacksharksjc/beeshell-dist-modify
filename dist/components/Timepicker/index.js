@@ -87,7 +87,7 @@ export class Timepicker extends React.Component {
         };
         return data;
     }
-    componentWillReceiveProps(nextProps) {
+    UNSAFE_componentWillReceiveProps(nextProps) {
         if (nextProps.value !== this.props.value) {
             this.setState({
                 ...this.state,

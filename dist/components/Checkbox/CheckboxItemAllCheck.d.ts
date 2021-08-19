@@ -19,7 +19,7 @@ export declare class CheckboxItemAllCheck extends CheckboxItem<CheckboxItemAllCh
         checked: boolean;
     };
     constructor(props: any);
-    componentWillReceiveProps(nextProps: any): void;
+    UNSAFE_componentWillReceiveProps(nextProps: any): void;
     handlePress: () => void;
     renderLabel(): JSX.Element;
     renderIcon: () => JSX.Element;

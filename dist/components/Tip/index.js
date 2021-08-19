@@ -41,12 +41,12 @@ export class Tip extends Modal {
         };
         Modal.prototype.init.call(this, tmpProps, syncTag);
     }
-    componentWillReceiveProps(nextProps) {
+    UNSAFE_componentWillReceiveProps(nextProps) {
         if (nextProps.position !== this.props.position) {
             this.init(nextProps, false);
         }
         else {
-            Modal.prototype.componentWillReceiveProps.call(this, nextProps);
+            Modal.prototype.UNSAFE_componentWillReceiveProps.call(this, nextProps);
         }
     }
     getContent(c) {

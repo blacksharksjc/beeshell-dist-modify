@@ -103,7 +103,7 @@ export class Calendar extends React.Component {
     }
     componentDidMount() {
     }
-    componentWillReceiveProps(nextProps) {
+    UNSAFE_componentWillReceiveProps(nextProps) {
         const keys = ['date', 'startDate', 'endDate'];
         const propsChanged = keys.some((key) => {
             if (nextProps[key] !== this.props[key]) {

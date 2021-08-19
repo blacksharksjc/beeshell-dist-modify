@@ -22,7 +22,7 @@ export declare class Timepicker extends React.Component<TimepickerProps, any> {
     };
     constructor(props: any);
     init(props: any): any;
-    componentWillReceiveProps(nextProps: any): void;
+    UNSAFE_componentWillReceiveProps(nextProps: any): void;
     handleChange: (columnIndex: any, rowIndex: any) => void;
     render(): JSX.Element;
 }

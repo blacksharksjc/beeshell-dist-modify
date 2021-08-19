@@ -45,7 +45,7 @@ export class CheckboxItem extends Component {
     componentDidMount() {
         this.animated && this.animated.toIn();
     }
-    componentWillReceiveProps(nextProps) {
+    UNSAFE_componentWillReceiveProps(nextProps) {
         if (nextProps.checked !== this.props.checked) {
             this.animated && this.animated.toIn();
         }

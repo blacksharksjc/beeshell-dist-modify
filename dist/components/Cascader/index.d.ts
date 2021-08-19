@@ -43,7 +43,7 @@ export declare class Cascader extends Component<CascaderProps, any> {
         checkedKey: any;
         disabledKey: any;
     };
-    componentWillReceiveProps(nextProps: any): void;
+    UNSAFE_componentWillReceiveProps(nextProps: any): void;
     componentDidMount(): void;
     handlePress: (item: any, index: any) => void;
     renderMenuItem(menuItem: any, menuIndex: any, menu: any): JSX.Element;

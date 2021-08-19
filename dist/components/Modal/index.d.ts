@@ -41,7 +41,7 @@ export declare class Modal<T extends ModalProps> extends React.Component<T, any>
     };
     constructor(props: any);
     init(props: any, syncTag?: boolean): void;
-    componentWillReceiveProps(nextProps: any): void;
+    UNSAFE_componentWillReceiveProps(nextProps: any): void;
     componentWillUnmount(): void;
     componentDidUpdate(prevProps: any, prevState: any): void;
     handlePressBackdrop: () => void;

@@ -554,7 +554,7 @@ export default class Slider extends PureComponent {
             onPanResponderTerminate: this.touchEnd
         });
     }
-    componentWillReceiveProps(nextProps) {
+    UNSAFE_componentWillReceiveProps(nextProps) {
         let newValue = 0;
         let newOtherValue = 0;
         const { range } = this.props;

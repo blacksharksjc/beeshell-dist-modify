@@ -65,7 +65,7 @@ export class Modal extends React.Component {
             });
         }
     }
-    componentWillReceiveProps(nextProps) {
+    UNSAFE_componentWillReceiveProps(nextProps) {
         if (nextProps.animatedTranslateX !== this.props.animatedTranslateX ||
             nextProps.animatedTranslateY !== this.props.animatedTranslateY ||
             nextProps.containerStyle !== this.props.containerStyle ||

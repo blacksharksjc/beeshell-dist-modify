@@ -24,7 +24,7 @@ export class Progress extends Component {
     }
     componentDidMount() {
     }
-    componentWillReceiveProps(nextProps) {
+    UNSAFE_componentWillReceiveProps(nextProps) {
         if (this.props.easing &&
             nextProps.percent !== this.props.percent) {
             this.toAnimate(this.state.barWidth, this.getWidthByPercent(this.state.wrapperWidth, this.props.percent), this.getWidthByPercent(this.state.wrapperWidth, nextProps.percent), this.props.duration);

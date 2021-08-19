@@ -17,7 +17,7 @@ export declare class Progress extends Component<ProgressProps, any> {
     };
     constructor(props: ProgressProps);
     componentDidMount(): void;
-    componentWillReceiveProps(nextProps: ProgressProps): void;
+    UNSAFE_componentWillReceiveProps(nextProps: ProgressProps): void;
     normalPercent(percent: number): number;
     getWidthByPercent(baseWidth: any, percent: any): number;
     onLayout: (e: LayoutChangeEvent) => void;

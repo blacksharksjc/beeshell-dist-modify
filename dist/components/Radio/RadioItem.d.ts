@@ -25,7 +25,7 @@ export default class RadioItem extends Component<RadioItemProps> {
     private animated;
     constructor(props: any);
     componentDidMount(): void;
-    componentWillReceiveProps(nextProps: any): void;
+    UNSAFE_componentWillReceiveProps(nextProps: any): void;
     handlePress: () => void;
     renderIcon: (checked: any, iconPosition: any) => JSX.Element;
     renderLabel: (checked: any) => JSX.Element;
