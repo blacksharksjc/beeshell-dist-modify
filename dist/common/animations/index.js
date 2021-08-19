@@ -96,22 +96,26 @@ export class FadeAnimated extends CommonAnimated {
                 Animated.timing(this.state.opacity, {
                     toValue: this.getPropertyValue('opacity', !tag),
                     duration: this.state.opacityDuration || this.state.duration,
-                    easing: this.state.easing
+                    easing: this.state.easing,
+                    useNativeDriver: true
                 }),
                 Animated.timing(this.state.scale, {
                     toValue: this.getPropertyValue('scale', !tag),
                     duration: this.state.scaleDuration || this.state.duration,
-                    easing: this.state.easing
+                    easing: this.state.easing,
+                    useNativeDriver: true
                 }),
                 Animated.timing(this.state.translateX, {
                     toValue: this.getPropertyValue('translateX', !tag),
                     duration: this.state.duration,
-                    easing: this.state.easing
+                    easing: this.state.easing,
+                    useNativeDriver: true
                 }),
                 Animated.timing(this.state.translateY, {
                     toValue: this.getPropertyValue('translateY', !tag),
                     duration: this.state.duration,
-                    easing: this.state.easing
+                    easing: this.state.easing,
+                    useNativeDriver: true
                 })
             ]);
         }).then(() => {
@@ -204,14 +208,16 @@ export class SlideAnimated extends CommonAnimated {
                 return Animated.timing(this.state[key], {
                     toValue: this.getPropertyValue(key, !tag),
                     duration: this.state.duration,
-                    easing: this.state.easing
+                    easing: this.state.easing,
+                    useNativeDriver: true
                 });
             });
             this.animated = Animated.parallel([
                 Animated.timing(this.state.opacity, {
                     toValue: this.getPropertyValue('opacity', !tag),
                     duration: this.state.duration,
-                    easing: this.state.easing
+                    easing: this.state.easing,
+                    useNativeDriver: true
                 }),
                 ...parallelArray
             ]);
