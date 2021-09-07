@@ -21,7 +21,8 @@ export default StyleSheet.create({
     targetItemContent: {
         flex: 1,
         paddingVertical: variables.mtdVSpacingL,
-        textAlign: 'center'
+        textAlign: 'center',
+        color: 'gray'
     },
     indicator: {
         position: 'absolute',

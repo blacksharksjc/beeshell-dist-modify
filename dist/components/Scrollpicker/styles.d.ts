@@ -20,6 +20,7 @@ declare const _default: {
         flex: number;
         paddingVertical: any;
         textAlign: "center";
+        color: 'gray';
     };
     indicator: {
         position: "absolute";
